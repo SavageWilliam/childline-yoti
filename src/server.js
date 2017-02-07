@@ -2,18 +2,14 @@ const Hapi = require('hapi');
 const Vision = require('vision');
 const Inert = require('inert');
 const Handlebars = require('handlebars');
-const YotiClient = require('yoti-node-sdk');
+
 const fs = require('fs');
 const path = require('path');
-
-const ageCheck = require('./age-check.js');
-
-
 // const env = require('env2')('./api-keys.env');
 
-const CLIENT_SDK_ID = '7dd705c6-4345-41b4-9713-0275fcd96506'
-const PEM = fs.readFileSync(path.join(__dirname, "../keys/app.pem"));
-var yotiClient = new YotiClient(CLIENT_SDK_ID, PEM)
+const routes = require('./routes.js');
+
+
 const server = new Hapi.Server();
 
 var tls = {
@@ -26,21 +22,7 @@ const port = process.env.PORT || 4000;
 server.connection({port: port, tls: tls });
 
 
-server.register(Inert, (err) => {
-  if (err) throw err;
-
-  server.route({
-    method: 'GET',
-    path: '/{param*}',
-    handler: {
-      directory: {
-        path: 'public'
-      }
-    }
-  })
-});
-
-server.register(Vision, (err) => {
+server.register([Inert, Vision], (err) => {
   if (err) throw err;
 
   server.views({
@@ -52,42 +34,8 @@ server.register(Vision, (err) => {
     layout: 'layout',
   });
 
-  server.route([
-    {
-      path: '/',
-      method: 'GET',
-      handler: (req, reply) => {
-        reply.view('index');
+  server.route(routes);
 
-      }
-    },
-    {
-      path: '/thankyou',
-      method: 'GET',
-      handler: (req, reply) => {
-      	let token = req.query.token;
-      	if(!token) {
-      		reply.view('error', {
-      			error : "No token has been provided."
-      		});
-      		return;
-      	}
-      	let promise = yotiClient.getActivityDetails(token);
-      	promise.then((activityDetails) => {
-          let dob = activityDetails.getUserProfile().dateOfBirth;
-          reply.view('verified', {
-      			isUnder18  : ageCheck(dob)
-      		})
-      	}).catch((err) => {
-      		console.error(err);
-      		reply.view('error', {
-      			error : err
-      		});
-      		return;
-  	    })
-      }
-    }
-  ]);
 });
 
 module.exports = server;
