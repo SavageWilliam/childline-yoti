@@ -7,7 +7,6 @@ const CLIENT_SDK_ID = '7dd705c6-4345-41b4-9713-0275fcd96506'
 const PEM = fs.readFileSync(path.join(__dirname, "../keys/app.pem"));
 const yotiClient = new YotiClient(CLIENT_SDK_ID, PEM);
 
-
 const home = {
   path: '/',
   method: 'GET',

@@ -2,17 +2,14 @@ const Hapi = require('hapi');
 const Vision = require('vision');
 const Inert = require('inert');
 const Handlebars = require('handlebars');
-
 const fs = require('fs');
 const path = require('path');
-// const env = require('env2')('./api-keys.env');
-
 const routes = require('./routes.js');
-
+// const env = require('env2')('./api-keys.env');
 
 const server = new Hapi.Server();
 
-var tls = {
+const tls = {
   key: fs.readFileSync(path.join(__dirname, '../keys/server-key.pem')),
   cert: fs.readFileSync(path.join(__dirname, '../keys/server-cert.pem'))
 };
@@ -20,7 +17,6 @@ var tls = {
 const port = process.env.PORT || 4000;
 
 server.connection({port: port, tls: tls });
-
 
 server.register([Inert, Vision], (err) => {
   if (err) throw err;
