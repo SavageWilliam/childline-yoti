@@ -5,6 +5,10 @@ const Handlebars = require('handlebars');
 const YotiClient = require('yoti-node-sdk');
 const fs = require('fs');
 const path = require('path');
+
+const ageCheck = require('./age-check.js');
+
+
 // const env = require('env2')('./api-keys.env');
 
 const CLIENT_SDK_ID = '7dd705c6-4345-41b4-9713-0275fcd96506'
@@ -70,10 +74,9 @@ server.register(Vision, (err) => {
       	}
       	let promise = yotiClient.getActivityDetails(token);
       	promise.then((activityDetails) => {
+          let dob = activityDetails.getUserProfile().dateOfBirth;
           reply.view('verified', {
-      			userId  : activityDetails.getUserId(),
-      			profile : activityDetails.getUserProfile(),
-      			outcome : activityDetails.getOutcome()
+      			isUnder18  : ageCheck(dob)
       		})
       	}).catch((err) => {
       		console.error(err);
