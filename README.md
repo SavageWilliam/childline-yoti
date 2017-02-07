@@ -28,11 +28,19 @@ remember me id, which is a unique identifier. So we only check that they have an
 - [Childline website](https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/sexting/) - Use for colour schemes as it is already 'proven for use case'.
   * Colours:
 ```css
-  #00a1d0
-  #73cfe8
-  #234f62
-  #632c7a
-  #eb5857
+/* HSL */
+$color1: hsla(194%, 100%, 41%, 1);
+$color2: hsla(240%, 100%, 67%, 1);
+$color3: hsla(198%, 47%, 26%, 1);
+$color4: hsla(193%, 72%, 68%, 1);
+$color5: hsla(0%, 79%, 63%, 1);
+
+/* RGB */
+$color1: rgba(0, 161, 208, 1);
+$color2: rgba(87, 87, 255, 1);
+$color3: rgba(35, 79, 98, 1);
+$color4: rgba(115, 207, 232, 1);
+$color5: rgba(235, 88, 87, 1);
 ```
 - [IWF online form](https://www.iwf.org.uk/) - This form takes a minimum of 5 interactions with Childline website. It is very difficult to find...
 
