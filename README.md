@@ -44,6 +44,5 @@ remember me id, which is a unique identifier. So we only check that they have an
 ### Prototype tech stack
 
 - Node Hapi.js server
-- client side rendering
 
 ### Future tech stack
