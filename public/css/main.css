@@ -1,3 +1,5 @@
+@font-face { font-family: childline; src: url('./fonts/childline-font/ChildlineWeb-Regular'); }
+
 .button {
   position: absolute;
   top: 50%;
@@ -7,4 +9,5 @@
 
 .title {
   text-align: center;
+  font-family: 'childline';
 }
