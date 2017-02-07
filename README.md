@@ -27,6 +27,8 @@ remember me id, which is a unique identifier. So we only check that they have an
 
 - [Childline website](https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/sexting/) - Use for colour schemes as it is already 'proven for use case'.
   * Colours:
+ ![image](https://cloud.githubusercontent.com/assets/15717822/22715594/8a5298ee-ed89-11e6-8bd7-9a85c8c0f578.png)
+
 ```css
 /* HSL */
 $color1: hsla(194%, 100%, 41%, 1);
