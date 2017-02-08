@@ -1,42 +1,57 @@
 {{#if isUnder18}}
-  <p>Under 18!</p>
+<div class="content">
+  <div class="title-div">
+    <h2>Describe the image content</h2>
+  </div>
+  <div class="form-container">
+    <form action="#">
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box-1"  />
+        <label for="filled-in-box-1">options...options..everywhere...ddfdfgf...fdgdfg.sdsgfdsg</label>
+      </p>
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box-2" />
+        <label for="filled-in-box-2">options...options..everywhere</label>
+      </p>
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box-3" />
+        <label for="filled-in-box-3">options...options..everywhere</label>
+      </p>
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box-4"  />
+        <label for="filled-in-box-4">options...options..everywhere</label>
+      </p>
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box-5" />
+        <label for="filled-in-box-5">options...options..everywhere</label>
+      </p>
+      <p>
+        <input type="checkbox" class="filled-in" id="filled-in-box-6"   />
+        <label for="filled-in-box-6">options...options..everywhere</label>
+      </p>
 
-  <form action="#">
-   <p>
-     <input type="checkbox" id="test5" />
-     <label for="test5">Red</label>
-   </p>
-   <p>
-     <input type="checkbox" id="test6" checked="checked" />
-     <label for="test6">Yellow</label>
-   </p>
-   <p>
-     <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
-     <label for="filled-in-box">Filled in</label>
-   </p>
-   <p>
-     <input type="checkbox" id="indeterminate-checkbox" />
-     <label for="indeterminate-checkbox">Indeterminate Style</label>
-   </p>
-   <p>
-     <input type="checkbox" id="test7" checked="checked" disabled="disabled" />
-     <label for="test7">Green</label>
-   </p>
-   <p>
-     <input type="checkbox" id="test8" disabled="disabled" />
-     <label for="test8">Brown</label>
-   </p>
-   
- </form>
+      <a class="waves-effect waves-light btn" href='/url-form.html'>Confirm</a>
+    </form>
 
+  </div>
+  <div class="other-options">
+    <div class="info">
+      <i class="large material-icons">info_outline</i>
+    </div>
 
-  <a class="waves-effect waves-light btn" href='/url-form.html'>Confirm</a>
+    <div class="info-message">
+      <p class="other-report">
+        If your report doesn't fall into any of these categories you could visit
+        <span><a href="http://www.ceop.police.uk/report-abuse">ceop.police.uk</a></span>
+        or see our useful links section.</p>
+      </div>
+      <div class="spacer" style="clear: both;"></div>
+      <!--  <a class="waves-effect waves-light btn"><i class="large material-icons left">info_outline</i>Further options</a>-->
 
-
-
-
-{{else}}
-<p>
-   OVER 18
-</p>
-{{/if}}
+    </div>
+  </div>
+  {{else}}
+  <p>
+    OVER 18
+  </p>
+  {{/if}}
