@@ -51,7 +51,7 @@ As a CYP
 I want to easily (and securely) send the image address  
 So that it can be removed and only seen by the IWF.  
 
-As a CYP 
+As a CYP
 I want to see information on what happens after submitting my request  
 So that I understand what to expect next (& how long it might take).  
 
@@ -93,6 +93,8 @@ $color2: rgba(87, 87, 255, 1);
 $color3: rgba(35, 79, 98, 1);
 $color4: rgba(115, 207, 232, 1);
 $color5: rgba(235, 88, 87, 1);
+$color6: #f28c00;
+$color7: #632c7a;
 ```
 - [IWF online form](https://www.iwf.org.uk/) - This form takes a minimum of 5 interactions with Childline website. It is very difficult to find...
 
