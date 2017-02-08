@@ -21,7 +21,7 @@
   margin: 0 auto;
   padding: 1rem;
   padding:0.75em;
-  background-color: white;
+  /*background-color: white;*/
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
 }
@@ -33,10 +33,26 @@
   color:white;
   padding:0.75rem;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.info{
+  height:100%;
+  max-width: 30%;
+  display: inline-block;
+  float:left;
+}
+
+.info-message{
+  max-width: 70%;
+  display: inline-block;
+  float:right;
 }
 
 form{
   font-size: 1.5rem;
+  padding:0.35rem;
 }
 
 label{
@@ -48,6 +64,9 @@ label{
   color: black !important;
 }
 
-p{
+form >p{
   font-size: 1.5rem;
+  background-color: white;
+  margin:0.25rem 0;
+  padding:0.5rem 1rem;
 }
