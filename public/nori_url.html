@@ -20,15 +20,17 @@ If you have multiple webpages (URLs) to report, please include these in the desc
     </div>
     <div class="form-container">
       <form action="#">
-        <p>
-          <input type="checkbox" class="filled-in" id="url"  />
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="url" class="materialize-textarea"></textarea>
           <label for="url">URL</label>
-        </p>
-        <p>
-          <input type="checkbox" class="filled-in" id="description" />
+        </div>
+        <div class="input-field col s6">
+          <i class="material-icons prefix">mode_edit</i>
+          <textarea id="description" class="materialize-textarea"></textarea>
           <label for="description">Description</label>
-        </p>
-        <a class="waves-effect waves-light btn" href='/url-form.html'>Submit Report</a>
+        </div>
+        <a class="waves-effect waves-light btn report-submit" href='/url-form.html'>Submit Report</a>
       </form>
     </div>
   </div>
