@@ -38,7 +38,7 @@ const yotiCallback = {
     }
     let promise = yotiClient.getActivityDetails(token);
     promise.then((activityDetails) => {
-      reply.view('verified', {
+      reply.view('content-form', {
         isUnder18: ageCheck(activityDetails.getUserProfile().dateOfBirth)
       })
     }).catch((err) => {
