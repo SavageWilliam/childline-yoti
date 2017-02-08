@@ -2,48 +2,44 @@
 @font-face { font-family: childline-bold; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Bold.otf'); }
 @font-face { font-family: Rosie; src: url('../fonts/childline/Rosie/Rosie-Regular.otf'); }
 
-.button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 body {
   font-family: 'childline';
 }
 
+.background-blue {
+  background-color: #CCECF5;
+}
+
 /* Pallet RGB */
-$color1: rgba(0, 161, 208, 1);
+/*$color1: rgba(0, 161, 208, 1);
 $color2: rgba(87, 87, 255, 1);
 $color3: rgba(35, 79, 98, 1);
 $color4: rgba(115, 207, 232, 1);
 $color5: rgba(235, 88, 87, 1);
 $color6: #f28c00;
 $color7: #632c7a;
+$color8: #CCECF5;*/
 
-/* landing-page */
 
 .landing-title {
-
+  background-color: rgba(0, 161, 208, 1);
+  padding: 4rem 1rem 2.5rem 1rem;
 }
+
 .landing-title__phone {
   color: white;
   font-size: 1rem;
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-
 }
 
 .landing-title h1 {
   font-size: 3rem;
   text-align: center;
-  background-color: rgba(0, 161, 208, 1);
   color: #fff;
   font-family: 'childline-bold';
   margin: 0;
-  padding: 4rem 1rem 2.5rem 1rem;
 }
 
 /*.landing-title h3 {
@@ -53,7 +49,6 @@ $color7: #632c7a;
   font-family: 'Rosie';
   color: white;
 }*/
-
 
 .landing-info {
   padding-left: 1rem;
@@ -72,7 +67,7 @@ $color7: #632c7a;
 .landing-sexting {
   width:100%;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
 .landing-logo {
@@ -95,4 +90,51 @@ $color7: #632c7a;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #632c7a;
+}
+
+/*Age check page */
+
+.age {
+  height: 100vh;
+}
+
+.age-title {
+  padding: 1rem;
+  margin: 0;
+  background-color: #632c7a;
+  padding: 4rem 1rem 2.5rem 1rem;
+  text-align: center;
+}
+
+.age-title h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: #fff;
+  font-family: 'childline-bold';
+}
+
+.qr-container {
+  position: absolute;
+  bottom:30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#canvas {
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+
+.yoti-btn {
+  position: fixed;
+  width: 100%;
+  bottom: 48%;
+  text-align: center;
+  z-index: -1;
+}
+
+.yoti-btn a {
+  display: block;
+  margn: 0 auto;
 }
