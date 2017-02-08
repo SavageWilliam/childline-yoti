@@ -3,11 +3,36 @@
     <h1 class='title'>Please prove you are 17 or younger</h1>
   </div>
 
-  <div class='qr-container' id='qrcodecontainer'>
-
+  <div class='get-yoti-btn'>
+    <i class="age-page small material-icons">info_outline</i>
+    <p class='link'>
+      Why do I need to prove my age?
+    </p>
   </div>
 
-  <span class='yoti-btn'>
+  <div class='get-yoti-btn'>
+    <i class="age-page small material-icons">info_outline</i>
+    <p class='link'>
+      What can I do if I am over 17?
+    </p>
+  </div>
+
+    <div class='yoti-info'>
+      <div id='yoti-info__content'>
+        <h3>YOTI - CONFIDENTIALLY VERIFY YOUR AGE</h3>
+        <i class="identity small material-icons">perm_identity</i>
+        <p>
+          Yoti empowers you to take back control over your identity. If you don't have a Yoti digital identity, please create <a class='link' href='yoti'>here</a> one and use it to verify you are under 17.
+        </p>
+      </div>
+
+    </div>
+
+
+  <div class='qr-container' id='qrcodecontainer'>
+  </div>
+
+  <span class='yoti-btn' id='yotiBtn'>
     <a
       class="btn yoti-connect learn-more btn-primary"
       data-target='embed'
@@ -15,13 +40,11 @@
       data-yoti-scenario-id="5be10ae7-af29-40b0-8d33-a0fb90cb0e88"
       data-yoti-type="inline"
       data-size="medium">
-      Prove age with Yoti
+      Prove Age
     </a>
   </span>
 
-  <a class="waves-effect waves-light btn">
-    Create Yoti Identity
-  </a>
+
 <!-- </div> -->
 
 <!-- required for yoti button -->
@@ -29,3 +52,5 @@
     _ybg.config.service = 'https://code.yoti.com/app/'
     _ybg.init()
 </script>
+
+<script type="text/javascript" src='js/animate.js'></script>

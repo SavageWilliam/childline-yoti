@@ -70,7 +70,7 @@
             } else {
                 var a = document.createElement("div"),
                     o = document.createElement("script");
-                a.setAttribute("id", "inline-qr-div"), o.setAttribute("id", "inline-qr-script"), a.innerHTML = n, o.innerHTML = r, document.getElementById('qrcodecontainer').appendChild(a), document.querySelector(".qrcodecontainer").appendChild(o)
+                a.setAttribute("id", "inline-qr-div"), o.setAttribute("id", "inline-qr-script"), a.innerHTML = n, o.innerHTML = r, document.getElementById('qrcodecontainer').appendChild(a), document.getElementById("qrcodecontainer").appendChild(o)
             }
         };
     t.renderTimeoutButton = function(t) {
@@ -123,4 +123,5 @@
             l.parentNode.replaceChild(g, l)
         }
     }, window._ybg = t
+
 }();

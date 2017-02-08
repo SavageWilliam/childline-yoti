@@ -1,6 +1,6 @@
 @font-face { font-family: childline; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Regular.otf'); }
 @font-face { font-family: childline-bold; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Bold.otf'); }
-@font-face { font-family: Rosie; src: url('../fonts/childline/Rosie/Rosie-Regular.otf'); }
+@font-face { font-family: Rosie; src: url('../fonts/childline/Rosie/rosie-regular-webfont.woff2'); }
 
 body {
   font-family: 'childline';
@@ -23,7 +23,7 @@ $color8: #CCECF5;*/
 
 .landing-title {
   background-color: rgba(0, 161, 208, 1);
-  padding: 4rem 1rem 2.5rem 1rem;
+  padding: 4rem 1rem 1rem 1rem;
 }
 
 .landing-title__phone {
@@ -42,32 +42,37 @@ $color8: #CCECF5;*/
   margin: 0;
 }
 
-/*.landing-title h3 {
-  background-color: rgba(0, 161, 208, 1);
-  font-size: 1.5rem;
-  margin: 0;
-  font-family: 'Rosie';
+.landing-title h3 {
+  font-size: 1.2rem;
+  /*font-family: 'Rosie';*/
   color: white;
-}*/
+  text-align: center;
+}
 
 .landing-info {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin: 1rem;
+  background-color: rgba(35, 79, 98, 1);
+  color: #fff;
 }
 
 .landing-info p {
   padding: 1rem;
   margin: 0;
-  color: #fff;
-  background-color: rgba(35, 79, 98, 1);
+}
+
+.landing-info h4 {
+  font-family: 'Rosie';
+  padding: 1rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 1.4rem;
 }
 
 .landing-sexting {
   width:100%;
   z-index: -1;
   opacity: 0.6;
+  height: 30vh;
 }
 
 .landing-logo {
@@ -84,16 +89,16 @@ $color8: #CCECF5;*/
 }
 
 .landing-btn {
-  position: fixed;
-  width: 10rem;
-  bottom: 1.5%;
+  position: absolute;
+  width: 20rem;
+  font-size: 1.7rem;
+  bottom: -2%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #632c7a;
 }
 
 /*Age check page */
-
 .age {
   height: 100vh;
 }
@@ -101,7 +106,7 @@ $color8: #CCECF5;*/
 .age-title {
   padding: 1rem;
   margin: 0;
-  background-color: #632c7a;
+  background-color: rgba(0, 161, 208, 1);
   padding: 4rem 1rem 2.5rem 1rem;
   text-align: center;
 }
@@ -123,18 +128,62 @@ $color8: #CCECF5;*/
 #canvas {
   border-radius: 0.5rem;
   background-color: white;
+  height: 10rem;
+  width: 10rem;
 }
 
 
 .yoti-btn {
   position: fixed;
+  bottom: 2%;
+  left:50%;
+  transform: translate(-50%, -50%);
   width: 100%;
-  bottom: 48%;
   text-align: center;
   z-index: -1;
 }
 
 .yoti-btn a {
   display: block;
-  margn: 0 auto;
+  margin: 0 auto;
+}
+
+.get-yoti-btn {
+  background-color: rgba(235, 88, 87, 1);
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 1rem;
+}
+
+i.age-page {
+  margin: 0.6rem;
+}
+
+
+.yoti-info {
+  margin: 1rem;
+  background-color: rgba(35, 79, 98, 1);
+  box-sizing: border-box;
+  padding: 1rem;
+  color: #fff;
+}
+
+.yoti-info h3 {
+  font-family: 'Rosie', 'childline-bold';
+  font-size: 1.5rem;
+  margin: 0;
+  width: 90%;
+  float:left;
+  margin-bottom: 1rem;
+}
+
+.identity {
+  width: 10%;
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
