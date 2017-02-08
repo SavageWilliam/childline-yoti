@@ -53,7 +53,7 @@ So that it can be removed and only seen by the IWF.
 
 As a CYP 
 I want to see information on what happens after submitting my request  
-So that I understand what to expect next (& how long it might take.  
+So that I understand what to expect next (& how long it might take).  
 
 As a CYP  
 I want an an option to submit more than one address  
