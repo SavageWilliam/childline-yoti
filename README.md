@@ -23,6 +23,56 @@ remember me id, which is a unique identifier. So we only check that they have an
 
 ## Development Resources & Notes
 
+### User journey
+
+As an under 18 (CYP)  
+I want to report an explicit online image to IWF (internet watch foundation)  
+So that it can be removed as quickly as possible.  
+
+### User stories
+
+As a CYP  
+I want to prove that I'm under 18  
+So that IWF can legally handle my case.  
+
+As a CYP  
+I want to remain anonymous  
+So that I feel comfortable reporting the image.  
+
+As a CYP  
+I want to understand if my image fits the criteria for removal  
+So that I am reassured that I am 'in the right place'.  
+
+As a CYP  
+I want to be presented with alternatives locations for help/advice  
+If my image doesn't fit the criteria for removal.  
+
+As a CYP  
+I want to easily (and securely) send the image address  
+So that it can be removed and only seen by the IWF.  
+
+As a CYP 
+I want to see information on what happens after submitting my request  
+So that I understand what to expect next (& how long it might take.  
+
+As a CYP  
+I want an an option to submit more than one address  
+So that I can submit multiple location (if applicable) to IWF.  
+
+**Stretch goals (next sprint)**
+
+As a CYP
+I would like to track my case's progress
+So that I know when its finished/if it has been removed.
+
+As a CYP  
+I want to see other options if the image can't be removed  
+So that I can take other actions to get the image taken down.
+
+As a CYP  
+I want to be see a confirmation message  
+So that I know my request has been sent AND what to expect next.  
+
 ### Websites
 
 - [Childline website](https://www.childline.org.uk/info-advice/bullying-abuse-safety/online-mobile-safety/sexting/) - Use for colour schemes as it is already 'proven for use case'.
