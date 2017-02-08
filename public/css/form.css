@@ -1,7 +1,6 @@
 
 .content {
 /*  max-width: 90%;*/
-  background-color: rgba(115, 207, 232, 1);
   /*margin: 1rem auto;*/
   padding-bottom: 1.5rem;
 }
@@ -9,21 +8,22 @@
 .title-div > h2{
   margin:0;
 }
+
 .title-div{
-  background-color: #632c7a;
+  background-color: #ED5753;
   color:white;
+  font-family: 'childline-bold';
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 4rem 1rem 2.5rem 1rem;
 }
 
 .form-container{
   max-width: 90%;
   margin: 0 auto;
   padding: 1rem;
-  padding:0.75em;
-  /*background-color: white;*/
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
+  background-color: #CCECF5;
 }
 
 .other-options{
@@ -51,12 +51,11 @@
 }
 
 form{
-  font-size: 1.5rem;
   padding:0.35rem;
 }
 
 label{
-  font-size:1.5rem !important;
+  font-size:1.3rem !important;
   width:100%;
   display: inline-block!important;
   white-space: normal;
@@ -64,11 +63,29 @@ label{
   color: black !important;
 }
 
+label:after {
+  margin-top: 0.6rem;
+}
+
+[type="checkbox"].filled-in:checked+label:after {
+  background-color: #632c7a;
+  border: 2px solid #632c7a;
+}
+
+
+[type="checkbox"]:checked+label:before {
+  margin-top: 0.7rem;
+}
+
 form >p{
   font-size: 1.5rem;
   background-color: white;
   margin:0.25rem 0;
   padding:0.5rem 1rem;
+}
+
+.purp {
+  background-color: #632c7a;
 }
 
 .input-field{
