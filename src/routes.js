@@ -8,10 +8,10 @@ const PEM = fs.readFileSync(path.join(__dirname, "../keys/app.pem"));
 const yotiClient = new YotiClient(CLIENT_SDK_ID, PEM);
 
 const home = {
-  path: '/',
+  path: '/age-check',
   method: 'GET',
   handler: (req, reply) => {
-    reply.view('index');
+    reply.view('age-check');
   }
 };
 
