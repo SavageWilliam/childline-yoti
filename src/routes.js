@@ -8,10 +8,10 @@ const PEM = fs.readFileSync(path.join(__dirname, "../keys/app.pem"));
 const yotiClient = new YotiClient(CLIENT_SDK_ID, PEM);
 
 const home = {
-  path: '/',
+  path: '/age-check',
   method: 'GET',
   handler: (req, reply) => {
-    reply.view('index');
+    reply.view('age-check');
   }
 };
 
@@ -38,7 +38,7 @@ const yotiCallback = {
     }
     let promise = yotiClient.getActivityDetails(token);
     promise.then((activityDetails) => {
-      reply.view('verified', {
+      reply.view('content-form', {
         isUnder18: ageCheck(activityDetails.getUserProfile().dateOfBirth)
       })
     }).catch((err) => {
