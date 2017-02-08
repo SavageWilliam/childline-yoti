@@ -11,3 +11,12 @@
   text-align: center;
   font-family: 'childline';
 }
+
+/* Pallet RGB */
+$color1: rgba(0, 161, 208, 1);
+$color2: rgba(87, 87, 255, 1);
+$color3: rgba(35, 79, 98, 1);
+$color4: rgba(115, 207, 232, 1);
+$color5: rgba(235, 88, 87, 1);
+$color6: #f28c00;
+$color7: #632c7a;

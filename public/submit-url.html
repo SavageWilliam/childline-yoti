@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homepage</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+  <p id='submit-url'>
+    Submit
+  </p>
+  <!-- Modal pop-up on submission -->
+  <div class="modal-overlay closed" id="modal-overlay"></div>
+  <div class="modal closed" id="modal">
+    <button class="modal__close-button" id="close-button">Cancel</button>
+    <div class="modal__content">
+      <h1>The online content has been submitted!</h1>
+      <p>
+        If you would like IWF to update you by email, please enter your email address below.
+      </p>
+      <input placeholder="email address"></input>
+      <button onclick="location.href = './create-ladder.html'">+</button>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="js/modal.js"></script>
+  </body>
+</html>
