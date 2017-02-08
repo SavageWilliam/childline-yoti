@@ -113,9 +113,10 @@ i.age-page {
   font-size: 1.2rem;
 }
 
-.identity {
+.identity-1 {
   width: 10%;
   text-align: right;
+  color: white;
 }
 
 .link:hover {
