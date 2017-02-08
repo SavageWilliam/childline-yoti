@@ -1,0 +1,14 @@
+@media (min-width: 600px) {
+  .landing-info {
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  .landing-sexting {
+    width: 500px;
+    margin: 1rem auto;
+    display: block;
+  }
+  .landing-logo {
+    width: 200px;
+  }
+}
