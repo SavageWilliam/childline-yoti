@@ -70,3 +70,21 @@ form >p{
   margin:0.25rem 0;
   padding:0.5rem 1rem;
 }
+
+.input-field{
+    font-size: 1.5rem;
+    background-color: white;
+    margin:0.25rem 0;
+    padding:0.5rem 1rem;
+}
+
+.report-submit{
+  margin-top:1.5rem;
+}
+p{
+  font-size: 1.5rem;
+}
+
+#description{
+  min-height: 6rem;
+}
