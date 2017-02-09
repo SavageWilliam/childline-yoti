@@ -17,6 +17,7 @@ const tls = {
 const port = process.env.PORT || 4000;
 
 server.connection({port: port, tls: tls });
+/*server.connection({port: port});*/
 
 server.register([Inert, Vision], (err) => {
   if (err) throw err;
