@@ -39,11 +39,25 @@
               <textarea id="description" class="materialize-textarea"></textarea>
               <label for="description">Description</label>
             </div>
-            <a class="waves-effect waves-light btn report-submit" href='/url-form.html'>Submit Report</a>
+            <a class="waves-effect waves-light btn report-submit" id="submit-url" href='/url-form.html'>Submit Report</a>
           </form>
         </div>
       </div>
 
+
+        <!-- Modal pop-up on submission -->
+        <div class="modal-overlay closed" id="modal-overlay"></div>
+        <div class="modal closed" id="modal">
+          <button class="modal__close-button" id="close-button">Cancel</button>
+          <div class="modal__content">
+            <h1>The online content has been submitted!</h1>
+            <p>
+              If you would like IWF to update you by email, please enter your email address below.
+            </p>
+            <input placeholder="email address"></input>
+            <button onclick="location.href = './create-ladder.html'">+</button>
+          </div>
+        </div>
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
