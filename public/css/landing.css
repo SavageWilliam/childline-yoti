@@ -92,6 +92,7 @@ body {
   margin: 0 auto;
   background-color: #632c7a;
   text-transform: none;
+  margin-bottom: 2rem;
 }
 
 .landing-btn i {

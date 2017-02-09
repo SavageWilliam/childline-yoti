@@ -5,7 +5,6 @@ const Handlebars = require('handlebars');
 const fs = require('fs');
 const path = require('path');
 const routes = require('./routes.js');
-// const env = require('env2')('./api-keys.env');
 
 const server = new Hapi.Server();
 
@@ -17,7 +16,6 @@ const tls = {
 const port = process.env.PORT || 4000;
 
 server.connection({port: port, tls: tls });
-/*server.connection({port: port});*/
 
 server.register([Inert, Vision], (err) => {
   if (err) throw err;
