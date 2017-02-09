@@ -34,11 +34,7 @@ body {
 }
 
 .landing-title h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
   font-family: 'childline-bold';
-  margin: 0;
 }
 
 .landing-title h3 {

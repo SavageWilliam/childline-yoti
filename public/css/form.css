@@ -7,6 +7,11 @@
   padding-bottom: 1.5rem;
 }
 
+.title-div {
+  padding: 2.5rem 1rem 2.5rem 1rem;
+  height: 24vh;
+}
+
 .title-div > h2{
   margin:0;
 }
@@ -24,16 +29,16 @@
 }
 .rosie{
   font-family: 'Rosie';
+  margin: 0;
 }
 .input-field-2{
   margin-top: 2.75rem !important;
 }
+
 .form-container{
-  max-width: 90%;
-  margin: 0 auto;
+  max-width: 94%;
+  margin: 1rem auto;
   padding: 1rem;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
   background-color: #CCECF5;
 }
 
@@ -115,13 +120,23 @@ form >p{
     padding:0.5rem 1rem;
 }
 
-.report-submit{
+#submit-url {
   margin-top:1.5rem;
+  background-color: #63297A;
+  transition: all 0.8s ease;
 }
 
+#submit-url:hover {
+  background-color: #2F153A
+}
 
 #description{
-  min-height: 6rem;
+  min-height: 5rem;
+  margin-bottom: 0.5rem;
+}
+
+#url {
+  margin-bottom: 0.5rem;
 }
 
 
