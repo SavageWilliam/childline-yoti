@@ -12,13 +12,24 @@
 }
 
 .title-div{
-  background-color: #ED5753;
+  background-color: #632c7a;
   color:white;
   font-family: 'childline-bold';
   text-align: center;
   padding: 4rem 1rem 2.5rem 1rem;
 }
-
+.message{
+  margin:1rem;
+  padding:0.75rem;
+  color:rgba(35, 79, 98, 1);
+  background-color: #f28c00;
+}
+.rosie{
+  font-family: 'Rosie';
+}
+.input-field-2{
+  margin-top: 2.75rem !important;
+}
 .form-container{
   max-width: 90%;
   margin: 0 auto;

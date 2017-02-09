@@ -5760,7 +5760,7 @@ textarea.materialize-textarea {
   padding: 0;
   box-shadow: none;
   box-sizing: content-box;
-  transition: all 0.3s;
+/*  transition: all 0.3s;*/
 }
 
 input:not([type]):disabled, input:not([type])[readonly="readonly"],
@@ -5991,7 +5991,7 @@ textarea.materialize-textarea.validate + label {
   pointer-events: none;
 }
 
-input:not([type]) + label:after,
+/*input:not([type]) + label:after,
 input[type=text] + label:after,
 input[type=password] + label:after,
 input[type=email] + label:after,
@@ -6010,7 +6010,7 @@ textarea.materialize-textarea + label:after {
   top: 60px;
   opacity: 0;
   transition: .2s opacity ease-out, .2s color ease-out;
-}
+}*/
 
 .input-field {
   position: relative;

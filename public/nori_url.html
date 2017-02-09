@@ -5,27 +5,34 @@
   <title></title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/form.css" media="screen" title="no title">
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
   <div class="content">
     <div class="title-div">
       <h2>Report Content Web Address</h2>
+    </div>
+    <div class="progress">
+       <div class="determinate" style="width: 66%"></div>
+    </div>
+    <div class="message">
+      <h4 class="rosie">WEBSITE DETAILS</h4>
       <p>
         If you have any information you think may help us such as a description of where the content you are reporting is located on a large website or username and password needed to gain access, please include it in the description box.
 
-If you have multiple webpages (URLs) to report, please include these in the description box.
+        If you have multiple webpages (URLs) to report, please include these in the description box.
       </p>
     </div>
     <div class="form-container">
+      <h4 class="rosie">WEB ADDRESS</h4>
       <form action="#">
         <div class="input-field col s6">
           <i class="material-icons prefix">mode_edit</i>
           <textarea id="url" class="materialize-textarea"></textarea>
           <label for="url">URL</label>
         </div>
-        <div class="input-field col s6">
+        <div class="input-field-2 input-field col s6 ">
           <i class="material-icons prefix">mode_edit</i>
           <textarea id="description" class="materialize-textarea"></textarea>
           <label for="description">Description</label>
@@ -36,6 +43,6 @@ If you have multiple webpages (URLs) to report, please include these in the desc
   </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
   </body>
   </html>
