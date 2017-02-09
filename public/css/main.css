@@ -1,16 +1,23 @@
 @font-face { font-family: Rosie; src: url('../fonts/childline/Rosie/rosie-regular-webfont.woff2'); }
 @font-face { font-family: childline-bold; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Bold.otf'); }
 
+body {
+  font-size: 1.2rem;
+}
 .title {
   font-family: 'Rosie', 'childline-bold';
   font-size: 3rem;
   margin: 0;
   color: #fff;
+  text-align: center;
 }
 
 .background-blue {
   background-color: #CCECF5;
+}
 
+.background-dark-blue {
+  background-color: rgba(35, 79, 98, 1);
 }
 
 .text-white {
