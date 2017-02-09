@@ -35,11 +35,16 @@ $color8: #CCECF5;*/
 }
 
 .qr-container {
-  position: absolute;
-  bottom:26%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
+
+#inline-qr-div {
+  position: absolute;;
+  margin-top: -8.5rem;
+  left: 50%;
+
+}
+
 
 #canvas {
   border-radius: 0.5rem;
