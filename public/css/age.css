@@ -10,16 +10,16 @@ body {
   background-color: #CCECF5;
 }
 
-/* Pallet RGB */
-/*$color1: rgba(0, 161, 208, 1);
-$color2: rgba(87, 87, 255, 1);
-$color3: rgba(35, 79, 98, 1);
-$color4: rgba(115, 207, 232, 1);
-$color5: rgba(235, 88, 87, 1);
-$color6: #f28c00;
-$color7: #632c7a;
-$color8: #CCECF5;*/
-
+/* Pallet RGB
+rgba(0, 161, 208, 1);
+rgba(87, 87, 255, 1);
+rgba(35, 79, 98, 1);
+rgba(115, 207, 232, 1);
+rgba(235, 88, 87, 1);
+#f28c00;
+#632c7a;
+#CCECF5;
+*/
 
 /*Age check page */
 .age {
@@ -29,9 +29,9 @@ $color8: #CCECF5;*/
 .age-title {
   margin: 0;
   background-color: rgba(0, 161, 208, 1);
-  padding: 3rem 1rem 3rem 1rem;
+  padding: 2.5rem 1rem 2.5rem 1rem;
   text-align: center;
-  height: 25vh;
+  height: 28vh;
 }
 
 .qr-container {
@@ -42,7 +42,6 @@ $color8: #CCECF5;*/
   position: absolute;;
   margin-top: -8.5rem;
   left: 50%;
-
 }
 
 

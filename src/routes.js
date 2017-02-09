@@ -7,13 +7,6 @@ const CLIENT_SDK_ID = '7dd705c6-4345-41b4-9713-0275fcd96506'
 const PEM = fs.readFileSync(path.join(__dirname, "../keys/app.pem"));
 const yotiClient = new YotiClient(CLIENT_SDK_ID, PEM);
 
-const home = {
-  path: '/age-check',
-  method: 'GET',
-  handler: (req, reply) => {
-    reply.view('age-check');
-  }
-};
 
 const fileServer = {
   method: 'GET',
@@ -38,9 +31,11 @@ const yotiCallback = {
     }
     let promise = yotiClient.getActivityDetails(token);
     promise.then((activityDetails) => {
-      reply.view('content-form', {
-        isUnder18: ageCheck(activityDetails.getUserProfile().dateOfBirth)
-      })
+      if(ageCheck(activityDetails.getUserProfile().dateOfBirth)) {
+        reply.view('content-form');
+      } else {
+        reply.view('over-age');
+      }
     }).catch((err) => {
       console.error(err);
       reply.view('error', {
@@ -52,7 +47,6 @@ const yotiCallback = {
 };
 
 module.exports = [
-  home,
   fileServer,
   yotiCallback
 ]

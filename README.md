@@ -85,23 +85,7 @@ So that I know my request has been sent AND what to expect next.
   * Colours:
  ![image](https://cloud.githubusercontent.com/assets/15717822/22715594/8a5298ee-ed89-11e6-8bd7-9a85c8c0f578.png)
 
-```css
-/* HSL */
-$color1: hsla(194%, 100%, 41%, 1);
-$color2: hsla(240%, 100%, 67%, 1);
-$color3: hsla(198%, 47%, 26%, 1);
-$color4: hsla(193%, 72%, 68%, 1);
-$color5: hsla(0%, 79%, 63%, 1);
 
-/* RGB */
-$color1: rgba(0, 161, 208, 1);
-$color2: rgba(87, 87, 255, 1);
-$color3: rgba(35, 79, 98, 1);
-$color4: rgba(115, 207, 232, 1);
-$color5: rgba(235, 88, 87, 1);
-$color6: #f28c00;
-$color7: #632c7a;
-```
 - [IWF online form](https://www.iwf.org.uk/) - This form takes a minimum of 5 interactions with Childline website. It is very difficult to find...
 
 ### Libraries
