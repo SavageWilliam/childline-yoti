@@ -30,6 +30,7 @@
 .rosie{
   font-family: 'Rosie';
   margin: 0;
+  margin-bottom: 0.5rem;
 }
 .input-field-2{
   margin-top: 2.75rem !important;
@@ -102,7 +103,6 @@ form >p{
 }
 
 .confirm {
-
   background-color: #632c7a;
   display: block;
   margin: 0 auto;
