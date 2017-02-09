@@ -166,7 +166,7 @@ form >p{
 
 .old-info {
   background-color: white;
-  margin: 1rem;
+/*  margin: 1rem;*/
   box-sizing: border-box;
   padding: 1rem;
   color: #fff;
@@ -196,23 +196,36 @@ form >p{
 }
 
 
+
 .other-ops {
   position: relative;
   margin: 0 auto;
   background-color: white;
   padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.option1,.option2, .option3{
+  border: 0.2rem solid #3EBB98;
+  width: 85%;
+  padding:0.45rem;
+  margin:0.5rem;
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-between;*/
 }
 
 .contact {
   float:left;
-  text-align: center;
+  text-align: left !important;
   display: block;
   color: #63297A;
-  border: 0.2rem solid #3EBB98;
   padding: 0.5rem;
-  height: 7rem;
-  width: 33%;
-  margin: 1rem;
+/*  height: 7rem;*/
+  /*max-width: 33%;*/
+/*  margin: 1rem;*/
   transition: all 0.5s ease;
   font-family: 'childline-bold';
 }
