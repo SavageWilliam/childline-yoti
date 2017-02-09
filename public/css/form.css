@@ -10,13 +10,16 @@
 }
 
 .title-div{
-  background-color: #ED5753;
+  background-color: #632c7a;
   color:white;
   font-family: 'childline-bold';
   text-align: center;
   padding: 4rem 1rem 2.5rem 1rem;
 }
 
+.input-field-2{
+  margin-top: 2.75rem !important;
+}
 .form-container{
   max-width: 90%;
   margin: 0 auto;
