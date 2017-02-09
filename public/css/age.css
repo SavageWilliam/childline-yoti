@@ -27,23 +27,15 @@ $color8: #CCECF5;*/
 }
 
 .age-title {
-  padding: 1rem;
   margin: 0;
   background-color: rgba(0, 161, 208, 1);
   padding: 4rem 1rem 2.5rem 1rem;
   text-align: center;
 }
 
-.age-title h1 {
-  font-size: 3rem;
-  margin: 0;
-  color: #fff;
-  font-family: 'Rosie', 'childline-bold';
-}
-
 .qr-container {
   position: absolute;
-  bottom:30%;
+  bottom:26%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -82,8 +74,19 @@ $color8: #CCECF5;*/
 
 .age-info a {
   font-size: 1.2rem;
-  padding-top: 0.5rem;
-  color: white;
+  padding: 1rem;
+  padding-left: 0;
+}
+
+.why-eighteen {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #0c3d52;
+  padding: 1rem;
+}
+
+.why-eighteen a {
+  padding: 0;
 }
 
 i.age-page {
