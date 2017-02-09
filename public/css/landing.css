@@ -69,12 +69,11 @@ body {
 }
 
 .landing-logo {
-  position: relative;
-  top: -8rem;
   float: left;
   min-width: 50%;
   box-sizing: border-box;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .landing-logo__img {
@@ -82,8 +81,6 @@ body {
 }
 
 .landing-btn {
-  position: relative;
-  top: -6rem;
   width: 100%;
   font-size: 1.7rem;
   font-family: 'childline';

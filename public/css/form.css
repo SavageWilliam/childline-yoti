@@ -30,7 +30,7 @@
 .rosie{
   font-family: 'Rosie';
   margin: 0;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 .input-field-2{
   margin-top: 2.75rem !important;
@@ -121,9 +121,12 @@ form >p{
 }
 
 #submit-url {
-  margin-top:1.5rem;
+  width: 15rem;
   background-color: #63297A;
   transition: all 0.8s ease;
+  display: block;
+  margin: 0 auto;
+  margin-top:1.5rem;
 }
 
 #submit-url:hover {
@@ -182,7 +185,7 @@ form >p{
 }
 
 .old-info p {
-  padding-top: 1.2rem;
+  padding-top: 0.5rem;
   margin: 0;
   margin-bottom: 1rem;
   font-size: 1.2rem;
@@ -193,8 +196,9 @@ form >p{
   width: 10%;
   text-align: right;
   color: #63297A;
+  padding-left: 0.2rem;
+  padding-top: 0.2rem;
 }
-
 
 
 .other-ops {
@@ -214,7 +218,6 @@ form >p{
   margin:0.5rem;
   display: flex;
   flex-direction: row;
-  /*justify-content: space-between;*/
 }
 
 .contact {
@@ -223,14 +226,12 @@ form >p{
   display: block;
   color: #63297A;
   padding: 0.5rem;
-/*  height: 7rem;*/
-  /*max-width: 33%;*/
-/*  margin: 1rem;*/
+  margin-left: 1rem;
   transition: all 0.5s ease;
   font-family: 'childline-bold';
 }
 
-.other-options a:hover {
+.other-ops a:hover {
   color: #2F153A;
   text-decoration: underline;
 }
