@@ -39,25 +39,27 @@
               <textarea id="description" class="materialize-textarea"></textarea>
               <label for="description">Description</label>
             </div>
-            <a class="waves-effect waves-light btn report-submit" id="submit-url" href='/url-form.html'>Submit Report</a>
+            <a class="waves-effect waves-light btn report-submit" id="submit-url" >Submit Report</a>
           </form>
         </div>
-      </div>
 
-
-        <!-- Modal pop-up on submission -->
-        <div class="modal-overlay closed" id="modal-overlay"></div>
-        <div class="modal closed" id="modal">
-          <button class="modal__close-button" id="close-button">Cancel</button>
-          <div class="modal__content">
-            <h1>The online content has been submitted!</h1>
+        <!-- mod pop-up on submission -->
+        <div class="mod-overlay closed" id="mod-overlay"></div>
+        <div class="mod closed" id="mod">
+          <button class="mod__close-button" id="close-button">X</button>
+          <div class="mod__content">
+            <h1>Thank you. The online content has been reported for removal</h1>
             <p>
               If you would like IWF to update you by email, please enter your email address below.
             </p>
             <input placeholder="email address"></input>
-            <button onclick="location.href = './create-ladder.html'">+</button>
+            <a class="waves-effect waves-light btn-large" href='/index.html'>Submit</a>
           </div>
         </div>
+
+      </div>
+
+
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>

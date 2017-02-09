@@ -1,15 +1,18 @@
-/* MODAL */
+@font-face { font-family: childline; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Regular.otf'); }
+@font-face { font-family: childline-bold; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Bold.otf'); }
 
-.modal {
+.mod {
   display: block;
   width: 80vw;
-  height: 60vh;
+  height: 70vh;
   position: fixed;
   z-index: 100;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background-color: #CCECF5;
+  color: #0C3D52;
+  font-family: 'childline-regular'
   box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
 }
 
@@ -17,7 +20,7 @@
   display: none;
 }
 
-.modal-overlay {
+.mod-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -27,8 +30,8 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-.modal__content {
-  text-align: center;
+.mod__content {
+  text-align: left;
   position: absolute;
   box-sizing: border-box;
   display: flex;
@@ -38,21 +41,20 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding: 3rem;
-  margin-top: 1rem;
+  padding: 1rem;
 }
 
-.modal__content h1 {
-  font-size: 4rem;
+.mod__content h1 {
+  font-size: 2.5rem;
+  font-family: 'childline-bold';
 }
 
-.modal__content input {
-  color: #333;
+.mod__content input {
+  color: #0C3D52;
   border: 0.2rem solid #ccc;
   border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
   transition: .2s background ease;
-  font-size: 3rem;
+  font-size: 1.2rem;
   margin: 0.5rem auto;
   width: 80%;
   padding: 1rem;
@@ -65,36 +67,30 @@
   margin-top: 1rem;
 }
 
-.modal__content button {
-  border-radius: 0.5rem;
+.mod__content a {
   color: #fff;
-  transition: 0.2s background ease;
-  text-align: center;
-  font-size: 3rem;
-  height: 4rem;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: 0.8rem;
-  margin-left: 0.8rem;
-  padding: 0.5rem 1.2rem;
-  font-family:Trebuchet MS;
-  font-weight:bold;
-  background: #3B3561;
+  width: 10rem;
+  background: #632c7a;
+  border: none;
 }
 
-.modal__content__image {
+.mod__content a:hover {
+  background-color: #2F153A;
+}
+
+.mod__content__image {
   margin: 0 auto;
   width: 85%;
 }
 
-.modal .modal__close-button {
+.mod .mod__close-button {
   position: absolute;
   z-index: 1;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
   border: 0;
-  background: black;
+  background: rgba(35, 79, 98, 1);
   color: white;
   padding:  0.5rem 1rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
