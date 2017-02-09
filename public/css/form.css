@@ -1,3 +1,5 @@
+@font-face { font-family: Rosie; src: url('../fonts/childline/Rosie/rosie-regular-webfont.woff2'); }
+@font-face { font-family: childline-bold; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Bold.otf'); }
 
 .content {
 /*  max-width: 90%;*/
@@ -32,7 +34,7 @@
   background-color: rgba(35, 79, 98, 1);
   color:white;
   padding:0.75rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
@@ -45,6 +47,7 @@
 }
 
 .info-message{
+  padding-left: 1rem;
   max-width: 70%;
   display: inline-block;
   float:right;
@@ -84,8 +87,10 @@ form >p{
   padding:0.5rem 1rem;
 }
 
-.purp {
+.confirm {
   background-color: #632c7a;
+  display: block;
+  margin: 0 auto;
 }
 
 .input-field{
@@ -104,4 +109,52 @@ p{
 
 #description{
   min-height: 6rem;
+}
+
+
+/*OLD styling*/
+
+.background-pink {
+  background-color: #fbdedd;
+  padding: 1rem;
+}
+.old-title {
+  font-family: 'Rosie';
+  color:white;
+}
+
+.old-title-p {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.old-info {
+  background-color: white;
+  margin: 1rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  color: #fff;
+}
+
+.old-info h3 {
+  font-family: 'childline-bold';
+  font-size: 1.6rem;
+  margin: 0;
+  width: 90%;
+  float:left;
+  color: #ED5753
+}
+
+.old-info p {
+  padding-top: 1.2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #ED5753;
+}
+
+.identity {
+  width: 10%;
+  text-align: right;
+  color: #ED5753;
 }

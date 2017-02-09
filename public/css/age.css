@@ -21,83 +21,6 @@ $color7: #632c7a;
 $color8: #CCECF5;*/
 
 
-.landing-title {
-  background-color: rgba(0, 161, 208, 1);
-  padding: 4rem 1rem 1rem 1rem;
-}
-
-.landing-title__phone {
-  color: white;
-  font-size: 1rem;
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-}
-
-.landing-title h1 {
-  font-size: 3rem;
-  text-align: center;
-  color: #fff;
-  font-family: 'childline-bold';
-  margin: 0;
-}
-
-.landing-title h3 {
-  font-size: 1.2rem;
-  /*font-family: 'Rosie';*/
-  color: white;
-  text-align: center;
-}
-
-.landing-info {
-  margin: 1rem;
-  background-color: rgba(35, 79, 98, 1);
-  color: #fff;
-}
-
-.landing-info p {
-  padding: 1rem;
-  margin: 0;
-}
-
-.landing-info h4 {
-  font-family: 'Rosie';
-  padding: 1rem;
-  padding-bottom: 0;
-  margin: 0;
-  font-size: 1.4rem;
-}
-
-.landing-sexting {
-  width:100%;
-  z-index: -1;
-  opacity: 0.6;
-  height: 30vh;
-}
-
-.landing-logo {
-  position: relative;
-  top: -10rem;
-  float: left;
-  min-width: 50%;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.landing-logo__img {
-  height: 6rem;
-}
-
-.landing-btn {
-  position: absolute;
-  width: 20rem;
-  font-size: 1.7rem;
-  bottom: -2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #632c7a;
-}
-
 /*Age check page */
 .age {
   height: 100vh;
@@ -115,7 +38,7 @@ $color8: #CCECF5;*/
   font-size: 3rem;
   margin: 0;
   color: #fff;
-  font-family: 'childline-bold';
+  font-family: 'Rosie', 'childline-bold';
 }
 
 .qr-container {
@@ -134,21 +57,22 @@ $color8: #CCECF5;*/
 
 
 .yoti-btn {
-  position: fixed;
-  bottom: 2%;
-  left:50%;
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
   width: 100%;
   text-align: center;
   z-index: -1;
+  margin-bottom: 1rem;
 }
 
 .yoti-btn a {
   display: block;
   margin: 0 auto;
+  padding-left: 2rem;
+  padding-right:2rem;
 }
 
-.get-yoti-btn {
+.age-info {
   background-color: rgba(235, 88, 87, 1);
   display: flex;
   flex-direction: row;
@@ -156,10 +80,15 @@ $color8: #CCECF5;*/
   margin: 1rem;
 }
 
+.age-info a {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+  color: white;
+}
+
 i.age-page {
   margin: 0.6rem;
 }
-
 
 .yoti-info {
   margin: 1rem;
@@ -171,17 +100,23 @@ i.age-page {
 
 .yoti-info h3 {
   font-family: 'Rosie', 'childline-bold';
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0;
   width: 90%;
   float:left;
-  margin-bottom: 1rem;
 }
 
-.identity {
+.yoti-info p {
+  padding-top: 1.2rem;
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.identity-1 {
   width: 10%;
-  margin-bottom: 1.5rem;
   text-align: right;
+  color: white;
 }
 
 .link:hover {
