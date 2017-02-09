@@ -9,15 +9,15 @@ const routes = require('./routes.js');
 
 const server = new Hapi.Server();
 
-/*const tls = {
+const tls = {
   key: fs.readFileSync(path.join(__dirname, '../keys/server-key.pem')),
   cert: fs.readFileSync(path.join(__dirname, '../keys/server-cert.pem'))
-};*/
+};
 
 const port = process.env.PORT || 4000;
 
-/*server.connection({port: port, tls: tls });*/
-server.connection({port: port});
+server.connection({port: port, tls: tls });
+/*server.connection({port: port});*/
 
 server.register([Inert, Vision], (err) => {
   if (err) throw err;

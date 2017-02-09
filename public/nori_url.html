@@ -5,6 +5,8 @@
   <title></title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./css/form.css" media="screen" title="no title">
+  <link rel="stylesheet" href="./css/modal.css" media="screen" title="no title">
+  <link rel="stylesheet" href="/css/main.css" media="screen" title="no title">
   <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -13,17 +15,22 @@
     <div class="title-div">
       <h2>Report Content Web Address</h2>
     </div>
-    <div class="">
+    <div class="progress">
+       <div class="determinate" style="width: 66%"></div>
+    </div>
+    <div class="message">
+      <h4 class="rosie">WEBSITE DETAILS</h4>
       <p>
         If you have any information you think may help us such as a description of where the content you are reporting is located on a large website or username and password needed to gain access, please include it in the description box.
 
-If you have multiple webpages (URLs) to report, please include these in the description box.
+        If you have multiple webpages (URLs) to report, please include these in the description box.
       </p>
     </div>
     <div class="form-container">
+      <h4 class="rosie">WEB ADDRESS</h4>
       <form action="#">
         <div class="input-field col s6">
-          <i class="material-icons prefix">mode_edit</i>
+        <i class="material-icons prefix">mode_edit</i>
           <textarea id="url" class="materialize-textarea"></textarea>
           <label for="url">URL</label>
         </div>
@@ -32,12 +39,38 @@ If you have multiple webpages (URLs) to report, please include these in the desc
           <textarea id="description" class="materialize-textarea"></textarea>
           <label for="description">Description</label>
         </div>
-        <a class="waves-effect waves-light btn report-submit" href='/url-form.html'>Submit Report</a>
+        <a class="waves-effect waves-light btn report-submit" id="submit-url" >Submit Report</a>
       </form>
+    </div>
+  </div>
+  <!--<div class="modal-overlay closed" id="modal-overlay"></div>
+    <div class="modal closed" id="modal">
+      <button class="modal__close-button" id="close-button">Cancel</button>
+      <div class="modal__content">
+        <h1>Choose a name for the Goal you're going to overcome!</h1>
+        <input placeholder="Name of your goal"></input>
+        <button onclick="location.href = './create-ladder.html'">+</button>
+        <img src='images/cloud.svg' class='modal__content__image' alt="cloud">
+      </div>
+    </div>
+  </div>-->
+
+  <!-- Modal pop-up on submission -->
+  <div class="modal-overlay closed" id="modal-overlay"></div>
+  <div class="modal closed" id="modal">
+    <button class="modal__close-button" id="close-button">Cancel</button>
+    <div class="modal__content">
+      <h1>The online content has been submitted!</h1>
+      <p>
+        If you would like IWF to update you by email, please enter your email address below.
+      </p>
+      <input placeholder="email address"></input>
+      <button onclick="location.href = './create-ladder.html'">+</button>
     </div>
   </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
   </body>
   </html>

@@ -1,8 +1,13 @@
 {{#if isUnder18}}
 <div class="content">
   <div class="title-div">
-    <h2>Describe the image content</h2>
+    <h1 class='title'>DESCRIBE THE ONLINE CONTENT</h1>
   </div>
+
+  <div class="progress">
+     <div class="determinate" style="width: 66%"></div>
+  </div>
+
   <div class="form-container">
     <form action="#">
       <p>
@@ -25,7 +30,7 @@
         <input type="checkbox" class="filled-in" id="filled-in-box-5" />
         <label for="filled-in-box-5">Sexual activity that includes animals.</label>
       </p>
-      <a class="purp waves-effect waves-light btn" href='/url-form.html'>Confirm</a>
+      <a class="confirm waves-effect waves-light btn" href='/url-form.html'>Confirm</a>
     </form>
 
   </div>
@@ -49,7 +54,22 @@
   </div>
 
 {{else}}
-  <p>
-     OVER 18
-  </p>
+
+  <div class="title-div">
+    <h2 class='old-title'>SORRY, YOU'RE TOO OLD FOR THIS SERVICE</h2>
+    <p class='old-title-p'>
+      You must be 17 or younger.
+    </p>
+  </div>
+
+  <div class='background-pink'>
+    <div class='old-info'>
+        <h3>What can I do now?</h3>
+        <i class="identity small material-icons">perm_identity</i>
+        <p>
+          Unfortunately IWF are not legally able to remove the online content if the person is over 18. There are other options though:
+        </p>
+    </div>
+  </div>
+
 {{/if}}
