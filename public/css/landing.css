@@ -1,0 +1,108 @@
+@font-face { font-family: childline; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Regular.otf'); }
+@font-face { font-family: childline-bold; src: url('../fonts/childline/Childline/ChildlineWeb/ChildlineWeb-Bold.otf'); }
+@font-face { font-family: Rosie; src: url('../fonts/childline/Rosie/rosie-regular-webfont.woff2'); }
+
+body {
+  font-family: 'childline';
+}
+
+.landing-title {
+  background-color: rgba(0, 161, 208, 1);
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+.landing-title__phone {
+  color: white;
+  font-size: 1rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.landing-title p {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.landing-title__phone a {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.landing-title h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  font-family: 'childline-bold';
+  margin: 0;
+}
+
+.landing-title h3 {
+  font-size: 1.2rem;
+  /*font-family: 'Rosie';*/
+  color: white;
+  text-align: center;
+}
+
+.landing-info {
+  margin: 1rem;
+  background-color: rgba(35, 79, 98, 1);
+  color: #fff;
+}
+
+.landing-info p {
+  padding: 1rem;
+  margin: 0;
+}
+
+.landing-info h4 {
+  font-family: 'Rosie';
+  padding: 1rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.landing-sexting {
+  width:100%;
+  z-index: -1;
+  opacity: 0.6;
+  height: 25vh;
+}
+
+.landing-logo {
+  position: relative;
+  top: -10rem;
+  float: left;
+  min-width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.landing-logo__img {
+  height: 6rem;
+}
+
+.landing-btn {
+  position: relative;
+  top: -6rem;
+  width: 100%;
+  font-size: 1.7rem;
+  font-family: 'childline';
+}
+
+.landing-btn>a {
+  display: block;
+  width: 20rem;
+  margin: 0 auto;
+  background-color: #632c7a;
+  text-transform: lowercase;
+}
+
+.landing-btn a:hover {
+  background-color: #2F153A;
+}

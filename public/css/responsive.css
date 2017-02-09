@@ -1,0 +1,29 @@
+@media (min-width: 680px) {
+  .landing-info {
+    max-width: 500px;
+    margin: 1rem auto;
+  }
+  .landing-sexting {
+    width: 500px;
+    margin: 1rem auto;
+    display: block;
+  }
+  .landing-logo {
+    width: 200px;
+  }
+  .age-responsive {
+    width: 50%;
+    float: left;
+  }
+  .yoti-info {
+    width: 48%;
+    float: left;
+    margin: 0 auto;
+  }
+  .yoti-btn {
+    float: left;
+    width: 50%;
+    position: relative;
+    top: -3rem;
+  }
+}
