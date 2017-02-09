@@ -100,7 +100,11 @@ body {
   width: 20rem;
   margin: 0 auto;
   background-color: #632c7a;
-  text-transform: lowercase;
+  text-transform: none;
+}
+
+.landing-btn i {
+  float: right;
 }
 
 .landing-btn a:hover {
