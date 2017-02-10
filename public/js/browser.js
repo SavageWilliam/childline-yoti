@@ -1,5 +1,5 @@
 // Button to generate QRCode
-var qrbutton = document.querySelector('.get-qr-button');
+var qrButton = document.querySelector('.get-qr-button');
 // QR Code container element
 var qrcode = document.querySelector('.qr-code-output');
 // Profile name element
@@ -9,7 +9,7 @@ var getQR = function () {
   var o = new XMLHttpRequest();
   o.addEventListener('load', function (e) {
     var responseObj = JSON.parse(e.target.responseText);
-    qrbutton.style.display = 'none';
+    qrButton.style.display = 'none';
     qrcode.innerHTML = responseObj.svg;
     listenForToken(responseObj.proto, responseObj.url);
   });
@@ -90,68 +90,14 @@ function listenForToken (proto, url) {
                 n.readyState === XMLHttpRequest.DONE && 200 === n.status && s(n.response, r, i)
             }, n.open("GET", o, !0), n.setRequestHeader("X-Requested-With", "XMLHttpRequest"), n.send(null)
         }
-        // o = function(e, i, n) {
-        //     var r = t.config.qr + i,
-        //         o = new XMLHttpRequest;
-        //     o.onreadystatechange = function() {
-        //         if (o.readyState === XMLHttpRequest.DONE && 200 === o.status) {
-        //             var t = JSON.parse(o.responseText);
-        //             e.href = t.qrCodeUrl + "?callback=" + t.callbackUrl + "&id=" + t.application.id + "&mobile=" + JSON.stringify(!!n)
-        //         }
-        //     }, o.open("GET", r, !0),
-        //     o.setRequestHeader("X-Requested-With", "XMLHttpRequest"),
-        //     o.setRequestHeader("content-type", "application/json"),
-        //     o.send(null)
-        // },
-        // a = function(t) {
-        //     var e = {
-        //         css: "display:inline-block; background:#2e9ffe no-repeat left center; color:white;  text-decoration:none;   font-family: 'Roboto','Helvetica', sans-serif;                -webkit-border-radius: 3px;  -moz-border-radius: 3px; border-radius: 3px;            ",
-        //         imgCss: "vertical-align:middle;"
-        //     };
-        //     return "small" === t ? (e.css += "font-size:14px; padding:5px 7px;",
-        //     e.imgCss += "width:18px; padding-right: 6px;") : (e.css += "font-size:18px; padding:7px 9px;",
-        //     e.imgCss += "width:28px; padding-right: 10px;"),
-        //     e
-        // },
-        // s = function(t, e, i) {
-        //     var n = t.split("<!--split-->")[0] + "</div>",
-        //         r = t.split("<!--split-->")[1].split("<script>")[1].split("</script>")[0];
-        //     if (i) {
-        //         document.getElementById("inline-qr-div").innerHTML = n;
-        //         var o = document.createElement("script");
-        //         o.setAttribute("id", "inline-qr-script"), o.innerHTML = r, document.querySelector("body").appendChild(o)
-        //     } else {
-        //         var a = document.createElement("div"),
-        //             o = document.createElement("script");
-        //         a.setAttribute("id", "inline-qr-div"), o.setAttribute("id", "inline-qr-script"), a.innerHTML = n, o.innerHTML = r, document.getElementById('qrcodecontainer').appendChild(a), document.getElementById("qrcodecontainer").appendChild(o)
-        //     }
-    //     // };
-    // t.renderTimeoutButton = function(t) {
-    //     var e = document.getElementsByClassName("qr-code")[0],
-    //         i = !1,
-    //         n = document.getElementById("inline-qr-script");
-    //     n.parentNode.removeChild(n);
-    //     var o = document.createElement("a");
-    //     o.setAttribute("href", "#"),
-    //     o.setAttribute("style", "position: absolute; background-color: rgba(52,156,244,0.96); top: 50%; left: 50%; color: white; cursor: pointer; transform: translate(-50%, -50%); height:90% width: 90%;"),
-    //     o.innerHTML = '<span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);background: url(https://www.yoti.com/dist/css/svg/sprite.css-05b3de2c.svg) 0 84.84848484848484% no-repeat; width: 32px; height: 35px;"></span>',
-    //     e.appendChild(o),
-    //     o.addEventListener("click", function(e) {
-    //         e.preventDefault(), i || (r(e, t), i = !0)
-    //     })
-    // },
+
     t.init = function(i) {
         for (var s in i) t.config.hasOwnProperty(s) && (t.config[s] = i[s]);
         e(t.config.fontCDN);
-        for (var c = document.querySelectorAll("*[data-yoti-application-id],*[data-yoti-scenario-id]"), d = 0; d < c.length; d++) {
-          var l = c.item(d),
-            u = l.getAttribute("data-yoti-application-id"),
-            p = l.getAttribute("data-yoti-scenario-id"),
-            b = l.getAttribute("data-yoti-type"),
+            var u = '3392788e-e529-4309-8ed7-54d7ac554055',
+            p = '5be10ae7-af29-40b0-8d33-a0fb90cb0e88',
             // g gets the href set in o function - this will fire off need to add event listener
-
-            g = qrbutton,
-            m = document.createElement("img"),
+            g = qrButton,
               // A = a(l.dataset.size),
             v = t.config.service + u;
             //HERE WE CHECK IF WE ARE ON A MOBILE OR NOT!
@@ -163,7 +109,7 @@ function listenForToken (proto, url) {
           console.log(g, 'THE BUTTON');
           g.addEventListener("click", n);
 
-        }
+
 
     }
     t.config.service = 'https://code.yoti.com/app/'
