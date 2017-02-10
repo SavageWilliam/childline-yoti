@@ -24,7 +24,6 @@ const yotiCallback = {
   path: '/thankyou',
   method: 'GET',
   handler: (req, reply) => {
-    console.log("THANKYOU");
     let token = req.query.token;
     if(!token) {
       reply.view('error', {
@@ -50,25 +49,19 @@ const yotiCallback = {
 };
 
 
-
-
 qr = {
   path: '/qr',
   method: 'GET',
   handler: (req, reply) => {
     request.get(`https://www.yoti.com/qr/5be10ae7-af29-40b0-8d33-a0fb90cb0e88`, (e, response, body) => {
-      // Get URL
       const url = body.match(/https:\/\/code\.yoti\.com\/.*\?/)[0].slice(0, -1);
-      // Get proto
       const proto = body.match(/proto_.*=/)[0];
       console.log(proto);
-      // Make SVG
       const svg = new QRCode({
         content: url,
         color: 'white',
         background: '#432668'
       }).svg();
-      // Give to client
       reply(JSON.stringify({svg, proto, url}));
     });
   }
