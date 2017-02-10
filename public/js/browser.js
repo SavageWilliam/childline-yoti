@@ -28,6 +28,7 @@
         var data = JSON.parse(msg.data);
         switch (data.status) {
           case 'COMPLETED' : {
+            //Callback URL (with token)
             window.location = 'thankyou?token=' + data.token;
           }
         }
@@ -52,7 +53,7 @@
     n = function(t) {
         /webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Android/i.test(navigator.userAgent) && /Mobile/i.test(navigator.userAgent) && i(t.currentTarget)
     },
-    //Fires only in mobile
+    //Function only fires only in mobile
     o = function(e, i, n) {
      var r = 'https://www.yoti.com/qr/' + i,
        o = new XMLHttpRequest;
