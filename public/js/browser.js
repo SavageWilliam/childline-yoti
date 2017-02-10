@@ -1,17 +1,17 @@
-
 !function() {
     "use strict";
-    var qrButton = document.querySelector('.get-qr-button'),
-      qrcode = document.querySelector('.qr-code-output'),
-      appId = '3392788e-e529-4309-8ed7-54d7ac554055';
+    var qrBtn = document.querySelector('.get-qr-button'),
+      qrCode = document.querySelector('.qr-code-output'),
+      appId = '3392788e-e529-4309-8ed7-54d7ac554055',
+      scenId = '5be10ae7-af29-40b0-8d33-a0fb90cb0e88';
 
     var getQR = function () {
       var o = new XMLHttpRequest();
       o.addEventListener('load', function (e) {
         var responseObj = JSON.parse(e.target.responseText);
-        qrButton.style.display = 'none';
-        qrcode.innerHTML = responseObj.svg;
-        qrcode.style.textAlign = 'center';
+        qrBtn.style.display = 'none';
+        qrCode.innerHTML = responseObj.svg;
+        qrCode.style.textAlign = 'center';
         listenForToken(responseObj.proto, responseObj.url);
       });
       o.open('GET', '/qr');
@@ -60,7 +60,7 @@
      o.onreadystatechange = function() {
        if (o.readyState === XMLHttpRequest.DONE && 200 === o.status) {
          var t = JSON.parse(o.responseText);
-         e.href = t.qrCodeUrl + "?callback=" + t.callbackUrl + "&id=" + t.application.id + "&mobile=" + JSON.stringify(!!n)
+         e.href = t.qrcodeUrl + "?callback=" + t.callbackUrl + "&id=" + t.application.id + "&mobile=" + JSON.stringify(!!n)
        }
      }, o.open("GET", r, !0),
      o.setRequestHeader("X-Requested-With", "XMLHttpRequest"),
@@ -71,7 +71,7 @@
       e.preventDefault();
       var n = new XMLHttpRequest,
         r = e.currentTarget,
-        o = i || 'https://www.yoti.com/qr/5be10ae7-af29-40b0-8d33-a0fb90cb0e88'
+        o = i || 'https://www.yoti.com/qr/' + scenId;
       n.onreadystatechange = function() {
         n.readyState === XMLHttpRequest.DONE && 200 === n.status && s(n.response, r, i)
       }, n.open("GET", o, !0), n.setRequestHeader("X-Requested-With", "XMLHttpRequest"), n.send(null)
@@ -79,21 +79,17 @@
 
     t.init = function(i) {
       for (var s in i) t.config.hasOwnProperty(s) && (t.config[s] = i[s]);
-        var p = '5be10ae7-af29-40b0-8d33-a0fb90cb0e88',
-          // g gets the href set in o function - this will fire off need to add event listener
-          g = qrButton,
-            // A = a(l.dataset.size),
-          v = t.config.service + appId;
-          var b;
-          //HERE WE CHECK IF WE ARE ON A MOBILE OR NOT!
-          /webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Android/i.test(navigator.userAgent) && /Mobile/i.test(navigator.userAgent) ? (b = "_self", o(g, p, !0)) : (v = "javascript:void(0)", n = getQR);
-
+      // g gets the href set in o function - this will fire off need to add event listener
+      var g = qrBtn,
+      v = t.config.service + appId;
+      var b;
+      //HERE WE CHECK IF WE ARE ON A MOBILE OR NOT!
+      /webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini|Android/i.test(navigator.userAgent) && /Mobile/i.test(navigator.userAgent) ? (b = "_self", o(g, p, !0)) : (v = "javascript:void(0)", n = getQR);
+      g.setAttribute("target", b),
       g.setAttribute("href", t.config.service + appId),
       g.setAttribute("data-application-id", appId),
-      g.setAttribute("data-scenario-id", p),
-      console.log(g, 'THE BUTTON');
+      g.setAttribute("data-scenario-id", scenId),
       g.addEventListener("click", n);
-
     }
     t.config.service = 'https://code.yoti.com/app/'
     t.init()
