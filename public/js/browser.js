@@ -1,6 +1,6 @@
 !function() {
     "use strict";
-    var qrBtn = document.querySelector('.get-qr-button'),
+    var qrBtn = document.getElementById('yotiBtn'),
       qrCode = document.querySelector('.qr-code-output'),
       appId = '3392788e-e529-4309-8ed7-54d7ac554055',
       scenId = '5be10ae7-af29-40b0-8d33-a0fb90cb0e88';

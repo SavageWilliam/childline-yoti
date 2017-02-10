@@ -142,7 +142,6 @@ form >p{
   margin-bottom: 0.5rem;
 }
 
-
 /*OLD styling*/
 
 .title-old-main {
@@ -169,7 +168,6 @@ form >p{
 
 .old-info {
   background-color: white;
-/*  margin: 1rem;*/
   box-sizing: border-box;
   padding: 1rem;
   color: #fff;
@@ -199,7 +197,6 @@ form >p{
   padding-left: 0.2rem;
   padding-top: 0.2rem;
 }
-
 
 .other-ops {
   position: relative;
