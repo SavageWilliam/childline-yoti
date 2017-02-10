@@ -34,16 +34,11 @@ rgba(235, 88, 87, 1);
   height: 28vh;
 }
 
-.qr-container {
-  position: relative;
-}
-
 #inline-qr-div {
   position: absolute;;
   margin-top: -8.5rem;
   left: 50%;
 }
-
 
 #canvas {
   border-radius: 0.5rem;
@@ -51,7 +46,6 @@ rgba(235, 88, 87, 1);
   height: 10rem;
   width: 10rem;
 }
-
 
 .yoti-btn {
   display: block;

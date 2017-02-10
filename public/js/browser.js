@@ -9,8 +9,9 @@
       var o = new XMLHttpRequest();
       o.addEventListener('load', function (e) {
         var responseObj = JSON.parse(e.target.responseText);
-        qrButton.style.innerText = 'none';
+        qrButton.style.display = 'none';
         qrcode.innerHTML = responseObj.svg;
+        qrcode.style.textAlign = 'center';
         listenForToken(responseObj.proto, responseObj.url);
       });
       o.open('GET', '/qr');

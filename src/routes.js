@@ -59,8 +59,8 @@ qr = {
       console.log(proto);
       const svg = new QRCode({
         content: url,
-        color: 'white',
-        background: '#432668'
+        color: '#CCECF5',
+        background: 'rgba(35, 79, 98, 1)'
       }).svg();
       reply(JSON.stringify({svg, proto, url}));
     });
