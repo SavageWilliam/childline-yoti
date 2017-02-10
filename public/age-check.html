@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="js/browser.js"></script>
+
     <link rel="stylesheet" href="css/age.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/form.css" media="screen" title="no title">
@@ -52,10 +52,9 @@
         </div>
       </div>
 
-      <div class='qr-container' id='qrcodecontainer'>
-      </div>
+    <span class="qr-code-output"></span>
 
-      <span class='yoti-btn' id='yotiBtn'>
+      <span class='yoti-btn get-qr-button' id='yotiBtn'>
         <a
           class="btn yoti-connect learn-more btn-primary"
           data-target='embed'
@@ -70,11 +69,11 @@
     <!-- </div> -->
 
     <!-- required for yoti button -->
-    <script>
+    <!-- <script>
         _ybg.config.service = 'https://code.yoti.com/app/'
         _ybg.init()
-    </script>
-
+    </script> -->
+    <script src="js/browser.js"></script>
     <script type="text/javascript" src='js/animate.js'></script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
