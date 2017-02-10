@@ -52,19 +52,6 @@ rgba(235, 88, 87, 1);
   height: 2rem;
 }
 
-#inline-qr-div {
-  position: absolute;;
-  margin-top: -8.5rem;
-  left: 50%;
-}
-
-#canvas {
-  border-radius: 0.5rem;
-  background-color: white;
-  height: 10rem;
-  width: 10rem;
-}
-
 .yoti-btn {
   display: block;
   margin: 0 auto;
@@ -134,11 +121,26 @@ i.age-page {
   float:left;
 }
 
-.yoti-info p {
+.yoti-description {
   padding-top: 1.2rem;
   margin: 0;
   margin-bottom: 1rem;
   font-size: 1.2rem;
+}
+
+
+.scan-me {
+  font-size: 1.5rem;
+  text-align: center;
+  display: none;
+  margin: 0;
+  padding: 0;
+  font-family: 'Rosie';
+}
+
+.popup-yoti {
+  width: 4rem;
+  margin-left: 1rem;
 }
 
 .identity-1 {

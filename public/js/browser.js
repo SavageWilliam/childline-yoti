@@ -2,6 +2,7 @@
     "use strict";
     var qrBtn = document.getElementById('yotiBtn'),
       qrCode = document.querySelector('.qr-code-output'),
+      scanMe = document.querySelector('.scan-me'),
       appId = '3392788e-e529-4309-8ed7-54d7ac554055',
       scenId = '5be10ae7-af29-40b0-8d33-a0fb90cb0e88';
 
@@ -10,6 +11,7 @@
       o.addEventListener('load', function (e) {
         var responseObj = JSON.parse(e.target.responseText);
         qrBtn.style.display = 'none';
+        scanMe.style.display = 'block';
         qrCode.innerHTML = responseObj.svg;
         qrCode.style.textAlign = 'center';
         listenForToken(responseObj.proto, responseObj.url);

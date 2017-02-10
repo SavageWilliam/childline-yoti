@@ -22,6 +22,7 @@ body {
 
 .background-dark-blue {
   background-color: rgba(35, 79, 98, 1);
+  height: 35vh;
 }
 
 .text-white {

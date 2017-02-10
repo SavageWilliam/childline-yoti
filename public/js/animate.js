@@ -1,6 +1,7 @@
 const yotiBtn = document.getElementById('yotiBtn');
 yotiBtn.addEventListener('click', () => {
-  const content = document.getElementById('yoti-info__content');
-  console.log('content', content);
+  const content = document.querySelector('.yoti-intro');
+  const desc = document.querySelector('.yoti-description')
+  desc.classList += ' animated fadeOut';
   content.classList += ' animated zoomOut';
 })
